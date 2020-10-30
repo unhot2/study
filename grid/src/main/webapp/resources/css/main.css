@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.header {
+	width: 100%;
+	margin: 10px 0 10px 0;
+}
+
+.header img {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: minmax(100px, auto);
+	grid-gap: 10px;
+	padding: 0px 20px 0px 20px;
+}
+
+.wrapper>div {
+	border: 2px solid black;
+	border-radius: 5%;
+}
+
+.wrapper>div>div {
+	margin: 10px 20px 10px 20px;
+}
+
+.wrapper>div>img {
+	display: block;
+	width: 90%;
+	height: 370px;
+	margin: 10px auto 10px auto;
+}
+
+.one {
+	
+}
+
+.two {
+	
+}
+
+.three {
+	
+}
+
+.four {
+	
+}
+
+.five {
+	
+}
+
+.six {
+	
+}
