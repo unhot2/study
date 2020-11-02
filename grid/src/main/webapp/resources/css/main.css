@@ -10,36 +10,39 @@
 	margin: 0 auto 0 auto;
 }
 
-.wrapper {
+.shop {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
-	grid-template-rows: minmax(100px, auto);
+	grid-auto-rows: minmax(100px, auto);
 	grid-gap: 10px;
 	padding: 0px 20px 0px 20px;
 }
 
-.wrapper>div {
+.shop>div {
 	border: 2px solid black;
 	border-radius: 5%;
 }
 
-.wrapper>div>div {
+.shop>div>div {
 	margin: 10px 20px 10px 20px;
 }
 
-.wrapper>div>img {
+.shop>div>img {
 	display: block;
 	width: 90%;
 	height: 370px;
 	margin: 10px auto 10px auto;
 }
 
+.menu {
+	float:left;
+	width : 100px;
+}
+
 .one {
-	
 }
 
 .two {
-	
 }
 
 .three {
