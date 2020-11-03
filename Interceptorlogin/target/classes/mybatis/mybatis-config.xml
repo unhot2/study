@@ -10,7 +10,7 @@
 			<setting name="jdbcTypeForNull" value="NULL"/>
 		</settings>
 		<typeAliases>
-			<typeAlias alias="loginDTO" type="com.yg.dto.userDTO"/>
+			<typeAlias alias="userDTO" type="com.yg.dto.userDTO"/>
 		</typeAliases>
 	</configuration>
 	

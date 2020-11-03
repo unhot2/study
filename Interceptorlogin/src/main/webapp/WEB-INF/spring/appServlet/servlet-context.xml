@@ -24,7 +24,7 @@
 	</beans:bean>
 	
 	<!-- 특정 패키지 내의 Annotation을 스캔하고 Bean으로 등록시킨다 -->
-	<context:component-scan base-package="com.yg.controller" />
+	<context:component-scan base-package="com.yg.*" />
 	
 	
 	
