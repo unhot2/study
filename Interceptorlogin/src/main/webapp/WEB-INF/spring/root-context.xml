@@ -8,6 +8,7 @@
 	<!-- resource 의 database폴더에 database.properties에서 값 받아옴 -->
 	<context:property-placeholder location="classpath:database/database.properties"/>
 	
+	<!-- database.properties를 통해서 ${}로 설정값 입력 -->
 	<bean name="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="${database.driverClassName}" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- annotation을 사용하겠다는 의미 -->
+	<annotation-driven />
+
+	<!--  resources 매핑 사용시에는 resources/css, resources/js 같이 사용할 수 있다 -->
+	<resources mapping="/resources/**" location="/resources/" />
+	<resources mapping="/resources/css" location="/resources/css" />
+	<resources mapping="/resources/js" location="/resources/js" />
+
+	<!-- 요청처리 후 View Resolver에서 prefix와 suffix를 붙여 jsp를 찾게 해준다 -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<!-- 특정 패키지 내의 Annotation을 스캔하고 Bean으로 등록시킨다 -->
+	<context:component-scan base-package="com.yg.*" />
+	
+	
+	
+</beans:beans>
