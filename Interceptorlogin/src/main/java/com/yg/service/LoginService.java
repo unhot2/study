@@ -25,4 +25,8 @@ public class LoginService  {
 	public List<NoticeDTO> list(){
 		return dao.list();
 	}
+	
+	public NoticeDTO detail(NoticeDTO dto) {
+		return dao.detail(dto);
+	}
 }

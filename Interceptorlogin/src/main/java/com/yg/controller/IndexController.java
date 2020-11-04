@@ -63,6 +63,12 @@ public class IndexController {
 	public String write(HttpServletResponse response) throws IOException {
 		return "/board/write";
 	}
+	
+	@RequestMapping("detail")
+	public String detail(NoticeDTO dto,Model model) {
+		model.addAttribute("detail",service.detail(dto));
+		return "/board/detail";
+	}
 
 	@RequestMapping("logout")
 	public String logout(HttpSession session) {

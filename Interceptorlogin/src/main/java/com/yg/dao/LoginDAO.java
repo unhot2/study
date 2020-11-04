@@ -24,4 +24,8 @@ public class LoginDAO {
 	public List<NoticeDTO> list() {
 		return sqlSession.selectList("sql.list"); 
 	}
+	
+	public NoticeDTO detail(NoticeDTO dto) {
+		return sqlSession.selectOne("sql.detail",dto);
+	}
 }

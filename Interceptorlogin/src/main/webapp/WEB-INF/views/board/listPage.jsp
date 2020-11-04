@@ -27,7 +27,7 @@
 					<tr>
 						<td>${cnt.id}</td>
 						<td>${cnt.name }</td>
-						<td>${cnt.title }</td>
+						<td><a href="detail?id=${cnt.id}">${cnt.title }</a></td>
 						<td>${cnt.content }</td>
 					</tr>
 				</c:forEach>
